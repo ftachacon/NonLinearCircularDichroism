@@ -1,0 +1,16 @@
+vi foo.c
+  530  gcc -fopenmp -o foo foo.c
+  531  which gcc
+  532  whereis gcc
+  533  ls /usr/local/bin/gcc-7 
+  534  export CC=/usr/local/bin/gcc-7
+  535  ls
+  536  $CC -fopenmp -o foo foo.c
+  537  ./configure --help
+  538  which gfortran
+  539  which g++
+  540  export CXX=/usr/local/bin/g++-7 
+  541  echo $cc
+  542  echo $CC
+  543  ./configure --enable-openmp  --enable-threads --enable-mpi 
+  544  history 
