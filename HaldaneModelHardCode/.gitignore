@@ -1,0 +1,15 @@
+# Ignore vs code 
+.vscode/
+
+# Ignore every folder except python script folder
+*/*
+!/AlsisPythonShort
+AlsisPythonShort/*
+!/AlsisPythonShort/PY_ANALYSIS
+
+# Ignore compiled file
+exec_hhg_mpi
+
+# Some temporaray files
+backup_an_example.sh
+

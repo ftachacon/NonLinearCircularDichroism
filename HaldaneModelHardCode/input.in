@@ -1,0 +1,49 @@
+# laser information should be written in a block - no paramter 
+# npulses {npulses}
+#   {E0}  {w0}  {ncycles}  {ellip}  {cep}  {t0}  {theta0}  {env_name}
+#   env_name - cos4, gauss
+npulses 1
+    0.003    0.012    4    0.0    0.0    0.0    0.0    gauss
+
+
+# number of points - Nx, Ny
+Npoints  60  36
+
+# timestep (a.u.)
+dt 1.25
+
+# Lattice constant in Angstroms
+la0 3.24
+
+# NN hopping paramter in a.u.
+t1  0.01554
+
+# NNN hopping amplitude in a.u.
+t2  0.002042
+
+# dephasing time T2 (a.u.)
+T1  -1       #Dephasing time for occupations T1 -- atomic unists are needed
+T2  220      #Dephasing time for coherence T2 
+
+# Magnetic flux ( rad. )
+phi0  0    
+
+# On Site potential ratio to t2, i.e M/t2
+Mt2  14.4
+
+ksfactor  1         #BZ --scaling factor
+shotNumber -1       #No. Of Wave Snapshots
+
+offset_before 100   # Time before laser in a.u.
+offset_after 100    # Time after the laser in a.u. 
+
+
+# ...
+eps 0.1    
+gbox_ky_down 0.01          #Box -variable gauge ky low indexs
+gbox_ky_up   0.70          #Box variable gauge ky high indexs
+ky_shift_down  -0.35       #Box BZ shift 
+fbz_shift  1               #Switch to BZ shift 1 is true, 0 is no needed
+diagnostic 1               #Diagonotics flag 1 => YEs, 0 => NO nedded
+gauge 1                    # Intital WAVEFUNCTION GAUGE
+rflag 0                    # ... 
