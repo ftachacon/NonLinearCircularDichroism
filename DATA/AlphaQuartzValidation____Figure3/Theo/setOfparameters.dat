@@ -1,0 +1,24 @@
+
+#Laser-Parameters,  E0,          I0,              w0,             Ncycles,           CEP,     No.-time-steps,  Time-step-dt 
+          9.500000e-03      3.158750e+12      5.600000e-02      1.000000e+01      0.000000e+00      19058      2.500000e-01      
+
+
+
+#Momentum mesh & H.M. params., dkx (a.u.),  dky (a.u.),  Nx,  Ny, a0 (a.u.),  t1(a.u.),  t2 
+          9.406861e-04      9.326052e-04      511      595      7.561437e+00      8.000000e-02      1.333335e-02      
+
+
+
+#H.M. params.:, phi0 (rad.),  M0 (a.u.),   Min-eg(a.u.),        Max-eg,          Chern No.,        T2 (a.u.),    gauge1 
+          0.000000e+00      1.650000e-01      3.300000e-01      5.824946e-01      4.147020e-19      2.200000e+02      1      
+
+
+
+#Params.,   No.cores,  ellipticity,        regularization,      reg.-width,     gauge_ky_down,     gauge_ky_up,     gauge2 
+              119          0.000000e+00         1.000000e-01        2.000000e-01      1.000000e-02      7.000000e-01      1      
+
+
+
+#Params.,   BZ-shift-Switch,     ky-shift-0,       ky-shift-f,      BZ.-kxmax,      BZ.-kymax,      ---,     --- 
+              0          -3.500000e-01         1.000000e-02        2.398750e-01      2.769838e-01      0.000000e+00      2.200000e+02      
+

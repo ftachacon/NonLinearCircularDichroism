@@ -1,0 +1,50 @@
+# laser information should be written in a block - no paramter 
+# npulses {npulses}
+#   {E0}  {w0}  {ncycles}  {ellip}  {cep}  {t0}  {theta0}  {env_name}
+#   env_name - sin2, gauss
+npulses 1
+    0.0045    0.014    14    01    0.0    0.0    0.0    gauss
+    #0.00019    0.059578    8    1.0    0.0    0.0    0.0    gauss
+
+
+# number of points - Nx, Ny
+Npoints  511  595  
+
+# timestep (a.u.)
+dt 0.1
+
+# Lattice constant in Angstroms
+la0 1.0
+
+# NN hopping paramter in a.u.
+t1  0.075
+
+# NNN hopping amplitude in a.u.
+t2  0.025
+
+# dephasing time T1 and T2 (a.u.)
+T1  -1       # dephasing time of the occup 
+T2  220      # dephasing time of the coherent
+
+# Magnetic flux
+phi0  1.16
+
+# On Site potential ratio to t2, i.e M/t2
+Mt2  2.54
+
+ksfactor  1
+shotNumber -1
+
+offset_before 1000
+offset_after 1000
+
+
+# ...
+eps 0.1
+gbox_ky_down 0.01
+gbox_ky_up   0.70
+ky_shift_down  -0.35
+fbz_shift  0
+diagnostic 1
+gauge 2
+rflag 0

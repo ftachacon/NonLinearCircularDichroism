@@ -1,0 +1,4 @@
+
+#Laser-Parameters,  E0,          I0,              w0,             Ncycles,           ellipticity,           CEP,           t0,           theta0,     envelope (0 - gauss, 1 - sin2) 
+          4.500000e-03      7.087500e+11      1.400000e-02      1.400000e+01      -1.000000e+00      0.000000e+00      0.000000e+00      0.000000e+00      0   
+
