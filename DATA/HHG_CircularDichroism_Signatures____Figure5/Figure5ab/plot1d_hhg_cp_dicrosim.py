@@ -54,8 +54,8 @@ for axis in ['top','bottom','left','right']:
 
 hzero   = 0.25e-16;
 
-p1,=plt.plot( om, hhg__rcp + hzero, 'b', lw=2   );
-p2,=plt.plot( om, hhg__lcp + hzero, '-r', lw=1.1 );
+p1,=plt.plot( om, hhg__rcp + hzero, 'b', lw=3   );
+p2,=plt.plot( om, hhg__lcp + hzero, '-r', lw=3 );
 
 plt.fill_between( om, hhg__lcp, hhg__rcp, color=[0.24,0.9,0.0], alpha=0.250 )
 
@@ -68,26 +68,36 @@ xticks0  = np.arange(1,50,4);
 plt.xticks( xticks0 );
 
 if iparam=='Trivial':
-    plt.text(0.32, 5e-2, '(a) Triv. Phase', fontsize=37, color="k");
+    plt.text(0.5, 5e-2, '(a) Triv. Phase', fontsize=37, color="k");
 #plt.text(2, 5e-2, '    Trivial Phase', fontsize=28, color="k");
-else:
-    plt.text(0.32, 5e-2, '(b) Topo. Phase', fontsize=37, color="k");
+#else:
+#    plt.text(0.32, 5e-2, '(b) Topo. Phase', fontsize=37, color="k");
+#plt.text(1.5, 5e-2, 'Topo. Phase', fontsize=37, color="k");
 #plt.text(2, 5e-2, '    Topological Phase', fontsize=28, color="k");
 
+
+plt.text(6.9, 0.1e-2, r'$ {\rm CD_{k}} = \,\frac{I_{k,\rm RCP}-I_{k,\rm LCP}}{I_{k,\rm RCP}+I_{k,\rm LCP}} = +1$', fontsize=31, color="b");
+
+
 plt.yscale('log')
-plt.xlim([0,33])
+plt.xlim([4,29])
 
 plt.grid(True)
 
-plt.xlabel(r'$\rm Harmonic\,Order$', fontsize=34 );
+plt.xlabel(r'$\rm \omega/\omega_0$', fontsize=34 );
+#plt.ylabel(r'$\rm I_{HHG} \, Emission$ ', fontsize=34 );
+plt.ylabel(r'$\rm Light\,\,\, Emission$ ', fontsize=34 );
 
 if iparam=='Trivial':
     plt.ylabel(r'$\rm I_{HHG}$ (arb. u.)', fontsize=34 );
 
 
+#plt.text(1.5, 5e-2, 'Topo. Phase', fontsize=37, color="k");
+
 plt.tick_params(labelsize = 30 );
 
-yticks0  = [1e-20,1e-16, 1e-12, 1e-8, 1e-4, 1e0, 1e4 ]#10., 15, 5.0];
+#yticks0  = [1e-16, 1e-12, 1e-8, 1e-4, 1e0, 1e4 ]#10., 15, 5.0];
+yticks0  = [1e-16,  1e-8,  1e0, 1e4 ]#10., 15, 5.0];
 plt.yticks( yticks0 );
 plt.ylim([0.98e-16,1.0e0])
 
@@ -96,7 +106,7 @@ if iparam=='Trivial':
 else:
     fname='LCP_Vs_RCP_NonTrivial.pdf'
 
-plt.savefig(fname, dpi = 400);
+plt.savefig(fname, dpi = 300);
 
 plt.show()
 
